@@ -1,35 +1,40 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/result">result</router-link>
-    </div>
-    <router-view />
-  </div>
+  <v-app>
+    <header><h2>じゃんけん</h2></header>
+    <router-view></router-view>
+   
+
+     
+  </v-app>
 </template>
 
+<script>
+
+
+export default {
+  name: "App",
+
+  components: {
+   
+  },
+
+  data: () => ({
+    //
+  })
+};
+</script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.v-application{
+  padding: 30px 100px;
+}
+.container{
+  padding-top: 30px !important;
+}
+header{
   text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
 }
 li{
-  cursor: pointer;
+  list-style: none;
 }
+
 </style>
